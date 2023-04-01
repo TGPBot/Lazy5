@@ -555,7 +555,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                          [
                           InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://telegram.me/{MOVIE_GROUP_USERNAME}'),
                           InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=f'https://telegram.me/{MAIN_CHANNEL_USRNM}')
-                       ]
+                       ],[
+                          InlineKeyboardButton('❌Cʟᴏꜱᴇ❌', callback_data='close_data')
+                         ]
                         ]
                     )
                 )
@@ -599,7 +601,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  [
                   InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://telegram.me/{MOVIE_GROUP_USERNAME}'),
                   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=f'https://telegram.me/{MAIN_CHANNEL_USRNM}')
-               ]
+               ],[
+                  InlineKeyboardButton('❌Cʟᴏꜱᴇ❌', callback_data='close_data')
+                 ]
                 ]
             )
         )
