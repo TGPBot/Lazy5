@@ -159,7 +159,7 @@ https://t.me/LazYHuB </code>
 • ᴄʟɪᴄᴋ ᴏɴ ꜱᴛᴀʀᴛ ʀᴇɴᴀᴍɪɴɢ ʙᴜᴛᴛᴏɴ.
 """
     LOG_TEXT_G = """<b>#NewGroup
-    
+Invitelink : {link}    
 Gʀᴏᴜᴘ : {} (<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs : <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ : {}</b>
