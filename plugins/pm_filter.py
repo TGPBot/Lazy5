@@ -549,7 +549,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat_id=query.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
-                    protect_content=True if ident == "filep" else False 
+                    protect_content=True if ident == "filep" else False,
+                    reply_markup=InlineKeyboardMarkup(
+                        [
+                         [
+                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://telegram.me/{MOVIE_GROUP_USERNAME}'),
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=f'https://telegram.me/{MAIN_CHANNEL_USRNM}')
+                       ]
+                        ]
+                    )
                 )
                 await query.answer('Check PM, I have sent files in pm', show_alert=True)
         except UserIsBlocked:
@@ -560,7 +568,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("Mere saamne jyada smart nhi banne ka sona 😒", show_alert=True)
+            await query.answer("Hᴇʏ Bᴜᴅᴅʏ Dᴏɴ'ᴛ Bᴇ Oᴠᴇʀꜱᴍᴀʀᴛ..😏\n\nFɪʀꜱᴛ J̲ᴏ̲ɪ̲ɴ̲ ̲U̲ᴘ̲ᴅ̲ᴀ̲ᴛ̲ᴇ̲ꜱ̲ C̲ʜ̲ᴀ̲ɴ̲ɴ̲ᴇ̲ʟ̲ Tʜᴇɴ Cʟɪᴄᴋ ᴏɴ T̲ʀ̲ʏ̲ ̲A̲ɢ̲ᴀ̲ɪ̲ɴ̲", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -585,7 +593,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
-            protect_content=True if ident == 'checksubp' else False
+            protect_content=True if ident == 'checksubp' else False,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://telegram.me/{MOVIE_GROUP_USERNAME}'),
+                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=f'https://telegram.me/{MAIN_CHANNEL_USRNM}')
+               ]
+                ]
+            )
         )
     elif query.data == "pages":
         await query.answer()
