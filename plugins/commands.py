@@ -75,7 +75,7 @@ async def start(client, message):
             ],
              [
                 InlineKeyboardButton(
-                    "🔔Jᴏɪɴ Mᴏᴠɪᴇꜱ Cʜᴀɴɴᴇʟ🔔", url=f'https://telegram.me/{MOVIE_CHANNEL_USERNAME}')
+                    "🔔Jᴏɪɴ Mᴏᴠɪᴇꜱ Cʜᴀɴɴᴇʟ🔔", url=f"https://telegram.me/{MOVIE_CHANNEL_USERNAME}")
                 )
             ]
         ]
