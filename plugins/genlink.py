@@ -27,23 +27,23 @@ async def gen_link_s(bot, message):
         return await message.reply('𝙍𝙚𝙥𝙡𝙮 𝙩𝙤 𝙖 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙩𝙤 𝙂𝙚𝙩 𝙖 𝙎𝙝𝙖𝙧𝙚𝙖𝙗𝙡𝙚 𝙇𝙞𝙣𝙠...')
     file_type = replied.media
     if file_type not in [enums.MessageMediaType.VIDEO, enums.MessageMediaType.AUDIO, enums.MessageMediaType.DOCUMENT]:
-        return await message.reply("Reply to a supported media")
+        return await message.reply("𝙍𝙚𝙥𝙡𝙮 𝙏𝙤 𝘼 𝙎𝙪𝙥𝙥𝙤𝙧𝙩𝙚𝙙 𝙈𝙚𝙙𝙞𝙖")
     if message.has_protected_content and message.chat.id not in ADMINS:
         return await message.reply("okDa")
     file_id, ref = unpack_new_file_id((getattr(replied, file_type.value)).file_id)
     string = 'filep_' if message.text.lower().strip() == "/plink" else 'file_'
     string += file_id
     outstr = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
-    await message.reply(f"Here is your Link:\nhttps://t.me/{temp.U_NAME}?start={outstr}")
+    await message.reply(f"𝙃𝙚𝙧𝙚 𝙞𝙨 𝙮𝙤𝙪𝙧 𝙡𝙞𝙣𝙠:\nhttps://t.me/{temp.U_NAME}?start={outstr}")
     
     
 @Client.on_message(filters.command(['batch', 'pbatch']) & filters.create(allowed))
 async def gen_link_batch(bot, message):
     if " " not in message.text:
-        return await message.reply("𝙐𝙨𝙚 𝘾𝙤𝙧𝙧𝙚𝙘𝙩 𝙁𝙤𝙧𝙢𝙖𝙩...\nExample <code>/batch https://t.me/LazYHuB https://t.me/LazYHuB</code>.")
+        return await message.reply("𝙐𝙨𝙚 𝘾𝙤𝙧𝙧𝙚𝙘𝙩 𝙁𝙤𝙧𝙢𝙖𝙩...\n\n𝙀𝙭𝙖𝙢𝙥𝙡𝙚 <code>/batch https://t.me/LazYHuB https://t.me/LazYHuB</code>.")
     links = message.text.strip().split(" ")
     if len(links) != 3:
-        return await message.reply("𝙐𝙨𝙚 𝘾𝙤𝙧𝙧𝙚𝙘𝙩 𝙁𝙤𝙧𝙢𝙖𝙩...\nExample <code>/batch https://t.me/LazYHuB https://t.me/LazYHuB</code>.")
+        return await message.reply("𝙐𝙨𝙚 𝘾𝙤𝙧𝙧𝙚𝙘𝙩 𝙁𝙤𝙧𝙢𝙖𝙩...\n\n𝙀𝙭𝙖𝙢𝙥𝙡𝙚 <code>/batch https://t.me/LazYHuB https://t.me/LazYHuB</code>.")
     cmd, first, last = links
     regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
     match = regex.match(first)
@@ -77,7 +77,7 @@ async def gen_link_batch(bot, message):
     if chat_id in FILE_STORE_CHANNEL:
         string = f"{f_msg_id}_{l_msg_id}_{chat_id}_{cmd.lower().strip()}"
         b_64 = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
-        return await sts.edit(f"Here is your link https://t.me/{temp.U_NAME}?start=DSTORE-{b_64}")
+        return await sts.edit(f"𝙃𝙚𝙧𝙚 𝙞𝙨 𝙮𝙤𝙪𝙧 𝙡𝙞𝙣𝙠... https://t.me/{temp.U_NAME}?start=DSTORE-{b_64}")
 
     FRMT = "Generating Link...\nTotal Messages: `{total}`\nDone: `{current}`\nRemaining: `{rem}`\nStatus: `{sts}`"
 
