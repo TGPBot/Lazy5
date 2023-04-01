@@ -1004,8 +1004,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
-            InlineKeyboardButton('refresh', callback_data='rfrsh')
+            InlineKeyboardButton('🚪 Bᴀᴄᴋ', callback_data='about'),
+            InlineKeyboardButton('♻️ Rᴇғʀᴇsʜ', callback_data='rfrsh')
+        ],[
+            InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -1020,6 +1022,39 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "owner_info":
+            btn = [[
+                    InlineKeyboardButton('Sᴜᴅᴏ Mᴀꜱᴛᴇʀ', callback_data='admin'),
+                    InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', callback_data='source')
+                  ],[
+                    InlineKeyboardButton("🚪 Bᴀᴄᴋ", callback_data="about")
+                  ]]
+            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_text(
+                text=(script.OWNER_INFO),
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )
+    elif query.data == "lazy_filstr":
+            filbtn = [[
+                       InlineKeyboardButton("🚪 Bᴀᴄᴋ", callback_data="help")
+                     ]]
+            reply_markup = InlineKeyboardMarkup(filbtn)
+            await query.message.edit_text(
+                text=(script.LAZY_FILSTR),
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )
+    elif query.data == "lazy_rnm":
+            filbtn = [[
+                       InlineKeyboardButton("🚪 Bᴀᴄᴋ", callback_data="help")
+                     ]]
+            reply_markup = InlineKeyboardMarkup(filbtn)
+            await query.message.edit_text(
+                text=(script.LAZY_RNM),
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
