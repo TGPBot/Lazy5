@@ -56,7 +56,7 @@ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ- <a href=https://t.me/XKunalBot>Cʟɪᴄᴋ Hᴇʀᴇ
 3. ʙᴜᴛᴛᴏɴꜱ ꜱʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀꜱᴇᴅ ᴀꜱ ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ
 
 <b>ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonurl:https://t.me/TazHD)</code>
+<code>[Button Text](buttonurl:https://t.me/LazYHuB)</code>
 
 <b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ:</b>
 <code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code>"""
@@ -79,8 +79,8 @@ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ- <a href=https://t.me/XKunalBot>Cʟɪᴄᴋ Hᴇʀᴇ
 - ɪᴛ ʜᴇʟᴘꜱ ᴛᴏ ᴀᴠᴏɪᴅ ꜱᴘᴀᴍᴍɪɴɢ ɪɴ ɢʀᴏᴜᴘꜱ.
 
 <b>ɴᴏᴛᴇ:</b>
-1. ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.
-2. ꜱᴇɴᴅ <code>/connect</code> ꜰᴏʀ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴘᴍ
+• ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴀᴅᴅ ᴄᴏɴɴᴇᴄᴛɪᴏɴ
+• ꜱᴇɴᴅ <code>/connect</code> ꜰᴏʀ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴘᴍ
 
 <u><b>Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:</b></u>
 • /connect  - <code>ᴄᴏɴɴᴇᴄᴛ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀᴛ ᴛᴏ ʏᴏᴜʀ ᴘᴍ</code>
@@ -125,9 +125,7 @@ Pᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ:- <a href='https://t.me/XKunalBot'>𝕏 
 
 <b>⍟ Mᴀɪɴ Cʜᴀɴɴᴇʟ ~ Bᴀᴄᴋᴜᴘ
 ⍟ Nᴇᴡ ʜᴅ Mᴏᴠɪᴇs Cʜᴀɴɴᴇʟ
-⍟ Rᴇǫᴜᴇsᴛ Lᴏɢs Cʜᴀɴɴᴇʟ
-⍟ Mᴏᴠɪᴇ Sᴇᴀʀᴄʜɪɴɢ Gʀᴏᴜᴘ
-⍟ Sᴜᴘᴘᴏʀᴛ-Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ</b>
+⍟ Mᴏᴠɪᴇ Sᴇᴀʀᴄʜɪɴɢ Gʀᴏᴜᴘ</b>
 """
     STATUS_TXT = """<b>✯ Tᴏᴛᴀʟ Fɪʟᴇs :</b> <code>{}</code>
 <b>✯ Tᴏᴛᴀʟ Usᴇʀs:</b> <code>{}</code>
@@ -147,11 +145,11 @@ Pᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ:- <a href='https://t.me/XKunalBot'>𝕏 
 • /batch <code>- ᴛᴏ ᴄʀᴇᴀᴛᴇ ʟɪɴᴋ ғᴏʀ ᴍᴜʟᴛɪᴘʟᴇ ᴍᴇᴅɪᴀ.<code>
 
 <b>Exᴀᴍᴘʟᴇ:</b>
-<code>/batch https://t.me/TazHD 
-https://t.me/TazHD </code>
+<code>/batch https://t.me/LazYHuB 
+https://t.me/LazYHuB </code>
 """
     LAZY_RNM = """
-</b>⍟ <u>Wᴇʟᴄᴏᴍᴇ Tᴏ Fɪʟᴇ Rᴇɴᴀᴍᴇ Mᴏᴅᴜʟᴇ</u> ⍟</b>
+<u><b>Wᴇʟᴄᴏᴍᴇ Tᴏ Fɪʟᴇ Rᴇɴᴀᴍᴇ Mᴏᴅᴜʟᴇ</b></u>
 
 » ᴀ ᴍᴏᴅᴜʟᴇ ᴛᴏ ʀᴇɴᴀᴍᴇ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ꜰɪʟᴇꜱ / ᴍᴇᴅɪᴀ.
 
