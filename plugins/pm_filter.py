@@ -95,7 +95,7 @@ async def doc(bot, update):
              await ms.edit(text=f"Your caption Error unexpected keyword ●> ({e})")
              return 
     else:
-        caption = f"**{new_filename}** \n\n**💽Data Costs:** `{filesize}`
+        caption = f"**{new_filename}** \n\n💽𝗗𝗮𝘁𝗮 𝗖𝗼𝘀𝘁: `{filesize}`
     if (media.thumbs or c_thumb):
         if c_thumb:
            ph_path = await bot.download_media(c_thumb) 
