@@ -1,7 +1,7 @@
 class script(object):
     START_TXT = """<b>Hᴇʏ {}
 
-ᴍʏ sᴇʟꜰ  <a href=https://t.me/{}>{}</a>  ᴛʜᴇ ʙᴇꜱᴛ ᴀʀᴛɪꜰɪᴄɪᴀʟ ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ ᴘᴏᴡᴇʀ ʙᴏᴛ\n\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇ & sᴇʀɪᴇs, ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ & ᴇɴᴊᴏʏ..😍\n\nʏᴏᴜ ᴄᴀɴ ☞ ᴀʟꜱᴏ ᴜꜱᴇ ᴍᴇ ᴛᴏ ʀᴇɴᴀᴍᴇ ʏᴏᴜʀ ꜰɪʟᴇꜱ</b>"""
+ᴍʏ sᴇʟꜰ   <a href=https://t.me/{}>{}</a>   ᴛʜᴇ ʙᴇꜱᴛ ᴀʀᴛɪꜰɪᴄɪᴀʟ ɪɴᴛᴇʟʟɪɢᴇɴᴄᴇ ᴘᴏᴡᴇʀ ʙᴏᴛ\n\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇ & sᴇʀɪᴇs, ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ & ᴇɴᴊᴏʏ..😍\n\nʏᴏᴜ ᴄᴀɴ ☞ ᴀʟꜱᴏ ᴜꜱᴇ ᴍᴇ ᴛᴏ ʀᴇɴᴀᴍᴇ ʏᴏᴜʀ ꜰɪʟᴇꜱ</b>"""
     LZTHMB_TEXT = """Hello {},
 Glad to see you here. It seems that you really love <a href=https://t.me/LazyDeveloperr >LazyDeveloper's</a> work.\n\n<b>Thumbnail extracting</b> feature will be available soon, please join <a href=https://t.me/LazyDeveloper>Dev Channel</a> and stay tuned for next <a href=https://t.me/LazyDeveloper>update</a>.\n\n  🐞 Report Bug here: <a href=http://t.me/LazyDeveloperSupport>LazyDev Support</a>
     """
