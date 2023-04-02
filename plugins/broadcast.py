@@ -4,7 +4,7 @@ import datetime
 import time
 from database.users_chats_db import db
 from info import ADMINS
-from utils import broadcast_messages
+from utils import broadcast_messages, broadcast_messages_group
 import asyncio
         
 @Client.on_message(filters.command("broadcast") & filters.user(ADMINS) & filters.reply)
@@ -37,9 +37,9 @@ async def verupikkals(bot, message):
         done += 1
         await asyncio.sleep(2)
         if not done % 20:
-            await sts.edit(f"𝙇𝙖𝙯𝙮 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙞𝙨 𝙞𝙣 𝙋𝙧𝙤𝙜𝙧𝙚𝙨𝙨...\n\n𝙏𝙤𝙩𝙖𝙡 𝙐𝙨𝙚𝙧𝙨: {total_users}\n𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙: {done} / {total_users}\n𝙎𝙪𝙘𝙘𝙚𝙨𝙨: {success}\n𝘽𝙡𝙤𝙘𝙠𝙚𝙙: {blocked}\n𝘿𝙚𝙡𝙚𝙩𝙚𝙙: {deleted}")    
+            await sts.edit(f"𝙇𝙖𝙯𝙮 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙞𝙨 𝙞𝙣 𝙋𝙧𝙤𝙜𝙧𝙚𝙨𝙨...\n\n<b>🧑🏻‍💻Tᴏᴛᴀʟ Uꜱᴇʀꜱ:</b> {total_users}\n<b>📟Cᴏᴍᴘʟᴇᴛᴇᴅ:</b> {done} / {total_users}\n<b>✅Sᴜᴄᴄᴇꜱꜱ:</b> {success}\n<b>📵Bʟᴏᴄᴋᴇᴅ:</b> {blocked}\n<b>🗑Dᴇʟᴇᴛᴇᴅ:</b> {deleted}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"𝙇𝙖𝙯𝙮 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙞𝙨 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙:\n𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙 𝙞𝙣 {time_taken} 𝙎𝙚𝙘𝙤𝙣𝙙𝙨.\n\n𝙏𝙤𝙩𝙖𝙡 𝙐𝙨𝙚𝙧𝙨: {total_users}\n𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙: {done} / {total_users}\n𝙎𝙪𝙘𝙘𝙚𝙨𝙨: {success}\n𝘽𝙡𝙤𝙘𝙠𝙚𝙙: {blocked}\n𝘿𝙚𝙡𝙚𝙩𝙚𝙙: {deleted}")
+    await sts.edit(f"𝙇𝙖𝙯𝙮 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙞𝙨 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙:\nCᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ {time_taken} ꜱᴇᴄᴏɴᴅꜱ.\n\n<b>🧑🏻‍💻Tᴏᴛᴀʟ Uꜱᴇʀꜱ:</b> {total_users}\n<b>📟Cᴏᴍᴘʟᴇᴛᴇᴅ:</b> {done} / {total_users}\n<b>✅Sᴜᴄᴄᴇꜱꜱ:</b> {success}\n<b>📵Bʟᴏᴄᴋᴇᴅ:</b> {blocked}\n<b>🗑Dᴇʟᴇᴛᴇᴅ:</b> {deleted}")
 
 @Client.on_message(filters.command("group_broadcast") & filters.user(ADMINS) & filters.reply)
 async def broadcast_group(bot, message):
@@ -62,6 +62,6 @@ async def broadcast_group(bot, message):
                 failed += 1
         done += 1
         if not done % 20:
-            await sts.edit(f"𝙇𝙖𝙯𝙮 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙞𝙨 𝙞𝙣 𝙋𝙧𝙤𝙜𝙧𝙚𝙨𝙨...\n\n𝙏𝙤𝙩𝙖𝙡 𝙂𝙧𝙤𝙪𝙥𝙨: {total_groups}\n𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙: {done} / {total_groups}\n𝙎𝙪𝙘𝙘𝙚𝙨𝙨: {success}")    
+            await sts.edit(f"𝙇𝙖𝙯𝙮 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙞𝙨 𝙞𝙣 𝙋𝙧𝙤𝙜𝙧𝙚𝙨𝙨...\n\n<b>🧑🏻‍💻Tᴏᴛᴀʟ Gʀᴏᴜᴘꜱ:</b> {total_groups}\n<b>📟Cᴏᴍᴘʟᴇᴛᴇᴅ:</b> {done} / {total_groups}\n<b>✅Sᴜᴄᴄᴇꜱꜱ:</b> {success}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"𝙇𝙖𝙯𝙮 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙞𝙨 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙:\n𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙 𝙞𝙣 {time_taken} 𝙎𝙚𝙘𝙤𝙣𝙙𝙨.\n\n𝙏𝙤𝙩𝙖𝙡 𝙂𝙧𝙤𝙪𝙥𝙨: {total_groups}\n𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙: {done} / {total_groups}\n𝙎𝙪𝙘𝙘𝙚𝙨𝙨: {success}")
+    await sts.edit(f"𝙇𝙖𝙯𝙮 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙞𝙨 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙:\n\nCᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ {time_taken} ꜱᴇᴄᴏɴᴅꜱ.\n\n<b>🧑🏻‍💻Tᴏᴛᴀʟ Gʀᴏᴜᴘꜱ:</b> {total_groups}\n<b>📟Cᴏᴍᴘʟᴇᴛᴇᴅ:</b> {done} / {total_groups}\n<b>✅Sᴜᴄᴄᴇꜱꜱ:</b> {success}")
