@@ -24,7 +24,7 @@ async def lazy_answer(client, message):
                 )
                 btn=[
                         [InlineKeyboardButton(text=f"⇱🤷‍♀️ Take Action 🗃️⇲", url=f'https://t.me/{temp.U_NAME}')],
-                        [InlineKeyboardButton(text=f"🗑 Delete log ❌", callback_data=f'close_data')],
+                        [InlineKeyboardButton(text=f"🗑 Delete log 🗑", callback_data=f'close_data')],
                     ]
                 reply_markup=InlineKeyboardMarkup(btn)
                 footer_credit = "🦋<a href='https://telegram.me/LazyDeveloperSupport'>• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •</a>══<a href='https://telegram.me/LazyDeveloperr'>• ᴄᴏɴᴛᴀᴄᴛ ᴍᴀꜱᴛᴇʀ •</a>🦋"
