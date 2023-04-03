@@ -34,6 +34,7 @@ async def lazy_answer(client, message):
             except Exception as error:
                 print(error)
     else:
+        await m.reply_text("<b>Hᴇʏ Bᴜᴅᴅʏ 😍,\n\nYᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Mᴏᴠɪᴇ Fʀᴏᴍ Hᴇʀᴇ\nSᴇᴀʀᴄʜ ᴏɴ Oᴜʀ <a href=f'https://telegram.me/{MOVIE_GROUP_USERNAME}'>Mᴏᴠɪᴇ Gʀᴏᴜᴘ​</a> ᴏʀ\nCʟɪᴄᴋ ᴏɴ Bᴇʟᴏᴡ Bᴜᴛᴛᴏɴ👇</b>", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text='🔍Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ-Sᴇʀɪᴇꜱ Hᴇʀᴇ🔍', url=f'https://telegram.me/{MOVIE_GROUP_USERNAME}')]]))
         return
     
 
