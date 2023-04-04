@@ -592,3 +592,7 @@ async def save_template(client, message):
     template = message.text.split(" ", 1)[1]
     await save_group_settings(grp_id, 'template', template)
     await sts.edit(f"Successfully changed template for {title} to\n\n{template}")
+
+@Client.on_message(filters.private & filters.text & ~filters.regex("^/"))
+async def msg_handler(c, m):
+    await m.reply_text("<b>Hᴇʏ Bᴜᴅᴅʏ 😍,\n\nYᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Mᴏᴠɪᴇ Fʀᴏᴍ Hᴇʀᴇ\nSᴇᴀʀᴄʜ ᴏɴ Oᴜʀ <a href='https://t.me/+AJCnlql9y4o4MjJl}'>Mᴏᴠɪᴇ Gʀᴏᴜᴘ​</a> ᴏʀ\nCʟɪᴄᴋ ᴏɴ Bᴇʟᴏᴡ Bᴜᴛᴛᴏɴ👇</b>", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text='🔍Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ-Sᴇʀɪᴇꜱ Hᴇʀᴇ🔍', url=f'https://telegram.me/{MOVIE_GROUP_USERNAME}')]]))
