@@ -27,8 +27,8 @@ async def lazy_answer(client, message):
                         [InlineKeyboardButton(text=f"🗑 Delete log 🗑", callback_data=f'close_data')],
                     ]
                 reply_markup=InlineKeyboardMarkup(btn)
-                footer_credit = "<b>Hᴇʏ Bᴜᴅᴅʏ 😍,\n\nYᴏᴜ Cᴀɴᴛ Gᴇᴛ Mᴏᴠɪᴇ Fʀᴏᴍ Hᴇʀᴇ\nSᴇᴀʀᴄʜ ᴏɴ Oᴜʀ <a href='https://telegram.me/+AJCnlql9y4o4MjJl'>Mᴏᴠɪᴇ Gʀᴏᴜᴘ​</a> ᴏʀ\nCʟɪᴄᴋ ᴏɴ Bᴇʟᴏᴡ Bᴜᴛᴛᴏɴ👇</b>, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text='🔍Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ-Sᴇʀɪᴇꜱ Hᴇʀᴇ🔍', url=f'https://telegram.me/{MOVIE_GROUP_USERNAME}')]])"
-                lazy_response = response.choices[0].text 
+                footer_credit = "🦋<a href='https://telegram.me/LazyDeveloperSupport'>• ʀᴇᴘᴏʀᴛ ɪꜱꜱᴜᴇ •</a>══<a href='https://telegram.me/LazyDeveloperr'>• ᴄᴏɴᴛᴀᴄᴛ ᴍᴀꜱᴛᴇʀ •</a>🦋"
+                lazy_response = response.choices[0].text 
                 await client.send_message(LAZY_AI_LOGS, text=f"⚡️⚡️#Lazy_AI_Query \n\n• A user named **{message.from_user.mention}** with user id - `{user_id}`. Asked me this query...\n\n══❚█══Q   U   E   R   Y══█❚══\n\n\n[Q྿.]**{lazy_users_message}**\n\n👇Here is what i responded:\n:-`{lazy_response}`\n\n\n❚═USER ID═❚═• `{user_id}` \n❚═USER Name═❚═• `{message.from_user.mention}` \n\n🗃️" , reply_markup = reply_markup )
                 await message.reply(f"{lazy_response}\n\n\n{footer_credit}")
             except Exception as error:
