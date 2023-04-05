@@ -78,7 +78,7 @@ MOVIE_CHANNEL_USERNAME = environ.get('MOVIE_CHANNEL_USERNAME', "+qAxoGBvSc34yNmU
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False)
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'omegalinks.in') #Always use website url from api section 
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
-LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5965340120').split()]
+LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '978408962').split()]
 
 # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 180))
