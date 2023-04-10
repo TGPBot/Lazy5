@@ -1180,7 +1180,7 @@ async def auto_filter(client, msg, spoll=False):
         if message.text.startswith("/"): return  # ignore commands
         if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
             return
-        if 2 < len(message.text) < 100:
+        if len(message.text) < 100:
             search = message.text
             requested_movie = search.strip()
             user_id = message.from_user.id
