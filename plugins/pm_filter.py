@@ -808,7 +808,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
-            await client.send_message(int(user_id), f"**Sᴏʀʀʏ!!! {query.from_user.mention} 😔**\n\n**Yᴏᴜʀ Rᴇǫᴜᴇsᴛ** `{movie}` **Hᴀꜱ Bᴇᴇɴ Rᴇᴊᴇᴄᴛᴇᴅ❌**\n\n**Rᴇᴀꜱᴏɴ: Aʟʀᴇᴀᴅʏ Aᴅᴅᴇᴅ ɪɴ Rᴇǫᴜᴇsᴛ Lɪꜱᴛ ᴏʀ Rᴇǫᴜᴇsᴛ ɪꜱ Mᴀʟғᴏʀᴍᴀᴛᴛᴇᴅ.**\n\n**Kɪɴᴅʟʏ Rᴇǫᴜᴇsᴛ Aɢᴀɪɴ  ᴏʀ  Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ Fᴏʀ Hᴇʟᴘ.**", reply_markup=reply_markup)
+            await client.send_message(int(user_id), f"**Sᴏʀʀʏ!!! {query.from_user.mention} 😔**\n\n**Yᴏᴜʀ RᴇǫᴜᴇsᴛHᴀꜱ Bᴇᴇɴ Rᴇᴊᴇᴄᴛᴇᴅ❌**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Rᴇᴀꜱᴏɴ: Aʟʀᴇᴀᴅʏ Aᴅᴅᴇᴅ ɪɴ Rᴇǫᴜᴇsᴛ Lɪꜱᴛ ᴏʀ Rᴇǫᴜᴇsᴛ ɪꜱ Mᴀʟғᴏʀᴍᴀᴛᴛᴇᴅ.**\n\n**Kɪɴᴅʟʏ Rᴇǫᴜᴇsᴛ Aɢᴀɪɴ  ᴏʀ  Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ Fᴏʀ Hᴇʟᴘ.**", reply_markup=reply_markup)
             await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Request Rejected ❌.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
