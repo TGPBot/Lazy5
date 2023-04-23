@@ -67,7 +67,7 @@ async def doc(bot, update):
         path = await bot.download_media(
                 message=file,
                 progress=progress_for_pyrogram,
-                progress_args=("**\n  ღ♡ ꜰɪʟᴇ ᴜɴᴅᴇʀ ᴄᴏɴꜱᴛʀᴜᴄᴛɪᴏɴ... ♡♪**", ms, c_time))
+                progress_args=("**\n  ღ♡ Fɪʟᴇ Uɴᴅᴇʀ Cᴏɴꜱᴛʀᴜᴄᴛɪᴏɴ... ♡♪**", ms, c_time))
     except Exception as e:
         await ms.edit(e)
         return 
