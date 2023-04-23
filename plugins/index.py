@@ -97,7 +97,7 @@ async def send_for_index(bot, message):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             return await message.reply(
-                f'\n✧✧────[ Lᴀᴢʏ Mᴏᴅᴇ ]────✧✧\n\n**__What do you want me to do with this file.?__**\n\n🪬Chat ID/ Username: <code>{chat_id}</code>\nℹ️Last Message ID: <code>{last_msg_id}</code> \n\n🎞**File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`',
+                f'\n**✧✧────[ Lᴀᴢʏ Mᴏᴅᴇ ]────✧✧**\n\n**__What do you want me to do with this file.?__**\n\n🪬**Chat ID/ Username:** <code>{chat_id}</code>\n**ℹ️Last Message ID:** <code>{last_msg_id}</code> \n\n🎞**File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`',
                 reply_to_message_id=message.id,
                 reply_markup=reply_markup)
         else:
@@ -138,7 +138,7 @@ async def send_for_index(bot, message):
                            reply_markup=reply_markup)
     if (LAZY_MODE == True):
         if message.from_user.id in LAZY_RENAMERS:
-            k = await message.reply('✧───[ Fɪʟᴇ ɪɴᴅᴇxɪɴɢ Mᴏᴅᴇ ]───✧\n\n\nTʜᴀɴᴋ Yᴏᴜ Fᴏʀ Tʜᴇ Cᴏɴᴛʀɪʙᴜᴛɪᴏɴ, Pʟz Wᴀɪᴛ Fᴏʀ Mʏ Mᴏᴅᴇʀᴀᴛᴏʀꜱ Tᴏ Vᴇʀɪꜰʏ Tʜᴇ Fɪʟᴇꜱ😊\n\nPᴏᴡᴇʀᴇᴅ Bʏ : @LazYHuB ❤️')
+            k = await message.reply('**✧───[ Fɪʟᴇ ɪɴᴅᴇxɪɴɢ Mᴏᴅᴇ ]───✧**\n\n\n**Tʜᴀɴᴋ Yᴏᴜ Fᴏʀ Tʜᴇ Cᴏɴᴛʀɪʙᴜᴛɪᴏɴ, Pʟz Wᴀɪᴛ Fᴏʀ Mʏ Mᴏᴅᴇʀᴀᴛᴏʀꜱ Tᴏ Vᴇʀɪꜰʏ Tʜᴇ Fɪʟᴇꜱ😊**\n\n**Pᴏᴡᴇʀᴇᴅ Bʏ : @LazYHuB ❤️**')
             buttons = [
                         [InlineKeyboardButton("📝✧✧ Sᴛᴀʀᴛ Rᴇɴᴀᴍɪɴɢ ✧✧📝", callback_data="rename") ],
                         [InlineKeyboardButton('⨳  C L Ф S Ξ  ⨳', callback_data='cancel')]]
@@ -147,13 +147,13 @@ async def send_for_index(bot, message):
             filename = file.file_name
             filesize = humanize.naturalsize(file.file_size) 
             await message.reply(
-                                f".\n✧✧────[ Lᴀᴢʏ Mᴏᴅᴇ ]────✧✧\n\nBecause you are an Authentic user, please don't hesitate to ask me for any other help...\n\n🪬Chat ID/ Username: <code>{chat_id}</code>\nℹ️Last Message ID: <code>{last_msg_id}</code> \n\n🎞**File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`\n\nYou can simply close this window or perform following actions, it's upon you",
+                                f".\n**✧✧────[ Lᴀᴢʏ Mᴏᴅᴇ ]────✧✧**\n\n**Because you are an Authentic user, please don't hesitate to ask me for any other help...**\n\n🪬**Chat ID/ Username:** <code>{chat_id}</code>\n**ℹ️Last Message ID:** <code>{last_msg_id}</code> \n\n🎞**File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`\n\n**You can simply close this window or perform following actions, it's upon you**",
                                 reply_to_message_id=message.id,
                                 reply_markup=reply_markup)
             await asyncio.sleep(600)
             await k.delete()
         else :      
-            await message.reply('✧───[ Fɪʟᴇ ɪɴᴅᴇxɪɴɢ Mᴏᴅᴇ ]───✧\n\n\nTʜᴀɴᴋ Yᴏᴜ Fᴏʀ Tʜᴇ Cᴏɴᴛʀɪʙᴜᴛɪᴏɴ, Pʟz Wᴀɪᴛ Fᴏʀ Mʏ Mᴏᴅᴇʀᴀᴛᴏʀꜱ Tᴏ Vᴇʀɪꜰʏ Tʜᴇ Fɪʟᴇꜱ😊\n\nPᴏᴡᴇʀᴇᴅ Bʏ : @LazYHuB ❤️')
+            await message.reply('**✧───[ Fɪʟᴇ ɪɴᴅᴇxɪɴɢ Mᴏᴅᴇ ]───✧**\n\n\n**Tʜᴀɴᴋ Yᴏᴜ Fᴏʀ Tʜᴇ Cᴏɴᴛʀɪʙᴜᴛɪᴏɴ, Pʟz Wᴀɪᴛ Fᴏʀ Mʏ Mᴏᴅᴇʀᴀᴛᴏʀꜱ Tᴏ Vᴇʀɪꜰʏ Tʜᴇ Fɪʟᴇꜱ😊**\n\n**Pᴏᴡᴇʀᴇᴅ Bʏ : @LazYHuB ❤️**')
             buttons = [
                         [InlineKeyboardButton("📝✧✧ Sᴛᴀʀᴛ Rᴇɴᴀᴍɪɴɢ ✧✧📝", callback_data="requireauth") ],
                         [InlineKeyboardButton('⨳  C L Ф S Ξ  ⨳', callback_data='cancel')]]
@@ -162,13 +162,13 @@ async def send_for_index(bot, message):
             filename = file.file_name
             filesize = humanize.naturalsize(file.file_size) 
             k = await message.reply(
-                                f"\n✧✧────[ Lᴀᴢʏ Mᴏᴅᴇ ]────✧✧\n\n🤩 Do you know @LazY_PrinceBot can do a lot of things at a time...\nWould you like to try some of it's amazing features... \n\n🪬Chat ID/ Username: <code>{chat_id}</code>\nℹ️Last Message ID: <code>{last_msg_id}</code> \n\n🎞**File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`",
+                                f"\n**✧✧────[ Lᴀᴢʏ Mᴏᴅᴇ ]────✧✧**\n\n**🤩 Do you know @LazY_PrinceBot can do a lot of things at a time...**\n**Would you like to try some of it's amazing features...** \n\n🪬**Chat ID/ Username:** <code>{chat_id}</code>\n**ℹ️Last Message ID:** <code>{last_msg_id}</code> \n\n🎞**File Name** :- `{filename}`\n\n⚙️**File Size** :- `{filesize}`",
                                 reply_to_message_id=message.id,
                                 reply_markup=reply_markup)
             await asyncio.sleep(600)
             await k.delete()
     else:
-        await message.reply('✧───[ Fɪʟᴇ ɪɴᴅᴇxɪɴɢ Mᴏᴅᴇ ]───✧\n\n\nTʜᴀɴᴋ Yᴏᴜ Fᴏʀ Tʜᴇ Cᴏɴᴛʀɪʙᴜᴛɪᴏɴ, Pʟz Wᴀɪᴛ Fᴏʀ Mʏ Mᴏᴅᴇʀᴀᴛᴏʀꜱ Tᴏ Vᴇʀɪꜰʏ Tʜᴇ Fɪʟᴇꜱ😊\n\nPᴏᴡᴇʀᴇᴅ Bʏ : @LazYHuB ❤️')
+        await message.reply('**✧───[ Fɪʟᴇ ɪɴᴅᴇxɪɴɢ Mᴏᴅᴇ ]───✧**\n\n\n**Tʜᴀɴᴋ Yᴏᴜ Fᴏʀ Tʜᴇ Cᴏɴᴛʀɪʙᴜᴛɪᴏɴ, Pʟz Wᴀɪᴛ Fᴏʀ Mʏ Mᴏᴅᴇʀᴀᴛᴏʀꜱ Tᴏ Vᴇʀɪꜰʏ Tʜᴇ Fɪʟᴇꜱ😊**\n\n**Pᴏᴡᴇʀᴇᴅ Bʏ : @LazYHuB ❤️**')
  
 
 
