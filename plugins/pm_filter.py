@@ -725,9 +725,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         # Send message to user
         try:
             btn = [[
-                InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
+                InlineKeyboardButton(text=f"💬Rᴇǫᴜᴇsᴛ Aɢᴀɪɴ💬", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/{ADMIN_USRNM}")
+                InlineKeyboardButton(text=f"🧑🏻‍💻Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ🧑🏻‍💻", url=f"https://telegram.me/{ADMIN_USRNM}")
             ]]
             btn_lzdv = [
                 [
@@ -736,7 +736,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv)
             reply_markup = InlineKeyboardMarkup(btn)
             await client.send_message(int(user_id), f"**Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ɪꜱ Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ..😌**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Pʟzz... Pʀᴏᴠɪᴅᴇ Sᴏᴍᴇ Mᴏʀᴇ Dᴇᴛᴀɪʟꜱ ᴛᴏ <a href='https://telegram.me/{ADMIN_USRNM}'>Aᴅᴍɪɴ</a>.**\n\n**Kɪɴᴅʟʏ Rᴇǫᴜᴇsᴛ Aɢᴀɪɴ  ᴏʀ Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ Fᴏʀ Hᴇʟᴘ.**", reply_markup=reply_markup)
-            await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Not Available 😒.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
+            await query.edit_message_text(text=f"- __**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ 😒\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
             await query.delete()
@@ -750,9 +750,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         # Send message to user
         try:
             btn = [[
-                InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
+                InlineKeyboardButton(text=f"🔎Sᴇᴀʀᴄʜ Aɢᴀɪɴ🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/{ADMIN_USRNM}")
+                InlineKeyboardButton(text=f"🧑🏻‍💻Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ🧑🏻‍💻", url=f"https://telegram.me/{ADMIN_USRNM}")
             ]]
             btn_lzdv = [
                 [
@@ -761,7 +761,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv)            
             reply_markup = InlineKeyboardMarkup(btn)
             await client.send_message(int(user_id), f"**Hᴇʏ..!! Yᴏᴜʀ Rᴇǫᴜᴇsᴛᴇᴅ Cᴏɴᴛᴇɴᴛ ɪꜱ Aʟʀᴇᴀᴅʏ Uᴘʟᴏᴀᴅᴇᴅ✅**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Pʟz..Sᴇᴀʀᴄʜ Aɢᴀɪɴ ɪɴ Oᴜʀ Oꜰꜰɪᴄɪᴀʟ Gʀᴏᴜᴘ🙃**", reply_markup=reply_markup)
-            await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Already Uploaded ⚡.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
+            await query.edit_message_text(text=f"- __**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Aʟʀᴇᴀᴅʏ Uᴘʟᴏᴀᴅᴇᴅ ✅\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
             await query.delete()
@@ -774,9 +774,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         # Send message to user
         try:
             btn = [[
-                InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
+                InlineKeyboardButton(text=f"🔎Sᴇᴀʀᴄʜ Aɢᴀɪɴ🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/{ADMIN_USRNM}")
+                InlineKeyboardButton(text=f"🧑🏻‍💻Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ🧑🏻‍💻", url=f"https://telegram.me/{ADMIN_USRNM}")
             ]]
             btn_lzdv = [
                 [
@@ -785,7 +785,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
             await client.send_message(int(user_id), f"**Yᴏᴜʀ Rᴇǫᴜᴇsᴛ Hᴀꜱ Bᴇᴇɴ Uᴘʟᴏᴀᴅᴇᴅ Sᴜᴄᴇssғᴜʟʟʏ✅**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Pʟz..Sᴇᴀʀᴄʜ Aɢᴀɪɴ ɪɴ Oᴜʀ Oꜰꜰɪᴄɪᴀʟ Gʀᴏᴜᴘ🙃**", reply_markup=reply_markup)
-            await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Upload done ✅.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋", reply_markup=reply_markup_lzdv)
+            await query.edit_message_text(text=f"- __**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Uᴘʟᴏᴀᴅᴇᴅ ✅\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`", reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
             await query.delete()
@@ -798,9 +798,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         # Send message to user
         try:
             btn = [[
-                InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
+                InlineKeyboardButton(text=f"💬Rᴇǫᴜᴇsᴛ Aɢᴀɪɴ💬", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/{ADMIN_USRNM}")
+                InlineKeyboardButton(text=f"🧑🏻‍💻Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ🧑🏻‍💻", url=f"https://telegram.me/{ADMIN_USRNM}")
             ]]
             btn_lzdv = [
                 [
@@ -809,7 +809,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
             await client.send_message(int(user_id), f"**Sᴏʀʀʏ!!!😔 Yᴏᴜʀ Rᴇǫᴜᴇsᴛ Hᴀꜱ Bᴇᴇɴ Rᴇᴊᴇᴄᴛᴇᴅ Bʏ Aᴅᴍɪɴ❌**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Rᴇᴀꜱᴏɴ: Aʟʀᴇᴀᴅʏ Aᴅᴅᴇᴅ ɪɴ Rᴇǫᴜᴇsᴛ Lɪꜱᴛ ᴏʀ Rᴇǫᴜᴇsᴛ ɪꜱ Mᴀʟғᴏʀᴍᴀᴛᴛᴇᴅ.**\n\n**Kɪɴᴅʟʏ Rᴇǫᴜᴇsᴛ Aɢᴀɪɴ  ᴏʀ  Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ Fᴏʀ Hᴇʟᴘ.**", reply_markup=reply_markup)
-            await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Request Rejected ❌.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
+            await query.edit_message_text(text=f"- __**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Rᴇǫᴜᴇsᴛ Rᴇᴊᴇᴄᴛᴇᴅ ❌\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
             await query.delete()
@@ -822,9 +822,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         # Send message to user
         try:
             btn = [[
-                InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
+                InlineKeyboardButton(text=f"🔎Sᴇᴀʀᴄʜ Aɢᴀɪɴ🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT ISSUE 🐞", url=f"https://telegram.me/{ADMIN_USRNM}")
+                InlineKeyboardButton(text=f"🧑🏻‍💻Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ🧑🏻‍💻", url=f"https://telegram.me/{ADMIN_USRNM}")
             ]]
             btn_lzdv = [
                 [
@@ -833,7 +833,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
             await client.send_message(int(user_id), f"**Yᴏᴜʀ Rᴇǫᴜᴇsᴛᴇᴅ Cᴏɴᴛᴇɴᴛ Cᴏᴜʟᴅɴ'ᴛ ʙᴇ Fᴏᴜɴᴅ Bᴇᴄᴀᴜꜱᴇ ɪᴛ'ꜱ Nᴏᴛ Sᴘᴇʟʟᴇᴅ Cᴏʀʀᴇᴄᴛʟʏ💬**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Pʟz.. Cʜᴇᴄᴋ Sᴘᴇʟʟɪɴɢ ɪɴ  <a href='https://google.com/search'>🔎Gᴏᴏɢʟᴇ</a>. Aɴᴅ Sᴇᴀʀᴄʜ Aɢᴀɪɴ ɪɴ Oᴜʀ Oꜰꜰɪᴄɪᴀʟ Gʀᴏᴜᴘ🙃**", reply_markup=reply_markup)
-            await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Spelling error 🖊.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
+            await query.edit_message_text(text=f"- __**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Sᴘᴇʟʟɪɴɢ Eʀʀᴏʀ 🖊\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
             await query.delete()
