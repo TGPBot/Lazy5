@@ -983,8 +983,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     parse_mode=enums.ParseMode.HTML
                 )    
     elif query.data == "requireauth":
-        buttons = [
-            [ InlineKeyboardButton("⨳  C L Ф S Ξ  ⨳", callback_data="cancel") ]]
+        buttons = [[ InlineKeyboardButton("💲Bᴜʏ Pʀᴇᴍɪᴜᴍ Pʟᴀɴ💲", url=f"https://telegram.me/{ADMIN_USRNM}") ],
+                           [ InlineKeyboardButton("⨳  C L Ф S Ξ  ⨳", callback_data="cancel") ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.REQ_AUTH_TEXT.format(query.from_user.mention),
