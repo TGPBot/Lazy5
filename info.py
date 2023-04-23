@@ -67,12 +67,12 @@ AI = is_enabled((environ.get("AI","False")), False)
 OPENAI_API = environ.get("OPENAI_API","")
 LAZY_AI_LOGS = int(environ.get("LAZY_AI_LOGS","-1001924121462")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of LazyPrincess ]
 # Requested Content template variables ---
-ADMIN_USRNM = environ.get('ADMIN_USRNM','real_heros') # WITHOUT @
-MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','Channel_UserName') # WITHOUT @
-DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','LayDeveloperr') # WITHOUT @
-LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','LayDeveloperr')  # WITHOUT @ [  add only handle - don't add full url  ] 
-MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "+qAxoGBvSc34yNmU1") #[ without @ ]
-MOVIE_CHANNEL_USERNAME = environ.get('MOVIE_CHANNEL_USERNAME', "+qAxoGBvSc34yNmU1") #[ without @ ]
+ADMIN_USRNM = environ.get('ADMIN_USRNM','XKunalBot') # WITHOUT @
+MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','LazYHuB') # WITHOUT @
+DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','LazYHuB') # WITHOUT @
+LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','LazYHuB')  # WITHOUT @ [  add only handle - don't add full url  ] 
+MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "+AJCnlql9y4o4MjJl") #[ without @ ]
+MOVIE_CHANNEL_USERNAME = environ.get('MOVIE_CHANNEL_USERNAME', "+5M64kC0935k0MTFl") #[ without @ ]
 
 # Url Shortner
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False)
@@ -81,20 +81,20 @@ URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
 LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '978408962').split()]
 
 # Auto Delete For Group Message (Self Delete) #
-SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 180))
+SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
 SELF_DELETE = is_enabled((environ.get('SELF_DELETE','True')), False)
 
 # Download Tutorial Button #
-DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/LazyDeveloper"
+DOWNLOAD_TEXT_NAME = "📥Hᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ꜰʀᴏᴍ Lɪɴᴋ📥"
+DOWNLOAD_TEXT_URL = "https://t.me/LazYHuB"
 
 # Direct File Button #
-DIRECT_FILE_TEXT_NAME = "📥 DIRECT FILE 📥"
-DIRECT_FILE_TEXT_URL = "https://t.me/LazyDeveloper"
+DIRECT_FILE_TEXT_NAME = "📁Gᴇᴛ ᴅɪʀᴇᴄᴛ ꜰɪʟᴇ ᴡɪᴛʜᴏᴜᴛ Lɪɴᴋ📁"
+DIRECT_FILE_TEXT_URL = "https://t.me/LazYHuB"
 
 # Custom Caption Under Button #
-CAPTION_BUTTON = "Get Updates"
-CAPTION_BUTTON_URL = "https://t.me/LazyDeveloper"
+CAPTION_BUTTON = "🔔 Gᴇᴛ Uᴘᴅᴀᴛᴇ 🔔"
+CAPTION_BUTTON_URL = "https://t.me/LazYHuB"
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
