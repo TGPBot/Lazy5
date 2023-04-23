@@ -731,7 +731,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]]
             btn_lzdv = [
                 [
-                InlineKeyboardButton(text=f"🗑 Delete Log ❌", callback_data = "close_data")
+                InlineKeyboardButton(text=f"❌ Dᴇʟᴇᴛᴇ Lᴏɢ ❌", callback_data = "close_data")
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv)
             reply_markup = InlineKeyboardMarkup(btn)
@@ -756,7 +756,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]]
             btn_lzdv = [
                 [
-                InlineKeyboardButton(text=f"🗑 Delete Log ❌", callback_data = "close_data")
+                InlineKeyboardButton(text=f"❌ Dᴇʟᴇᴛᴇ Lᴏɢ ❌", callback_data = "close_data")
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv)            
             reply_markup = InlineKeyboardMarkup(btn)
@@ -780,7 +780,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]]
             btn_lzdv = [
                 [
-                InlineKeyboardButton(text=f"🗑 Delete Log ❌", callback_data = "close_data")
+                InlineKeyboardButton(text=f"❌ Dᴇʟᴇᴛᴇ Lᴏɢ ❌", callback_data = "close_data")
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
@@ -804,7 +804,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]]
             btn_lzdv = [
                 [
-                InlineKeyboardButton(text=f"🗑 Delete Log ❌", callback_data = "close_data")
+                InlineKeyboardButton(text=f"❌ Dᴇʟᴇᴛᴇ Lᴏɢ ❌", callback_data = "close_data")
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
@@ -828,7 +828,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]]
             btn_lzdv = [
                 [
-                InlineKeyboardButton(text=f"🗑 Delete Log ❌", callback_data = "close_data")
+                InlineKeyboardButton(text=f"❌ Dᴇʟᴇᴛᴇ Lᴏɢ ❌", callback_data = "close_data")
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
