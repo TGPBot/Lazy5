@@ -695,12 +695,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "morchl":
         buttons = [[
-            InlineKeyboardButton('Mᴀɪɴ Cʜᴀɴɴᴇʟ', url=CAPTION_BUTTON_URL),
-            InlineKeyboardButton('Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ', url=f'https://telegram.me/{MOVIE_CHANNEL_USERNAME}')
+            InlineKeyboardButton('Bᴀᴄᴋᴜᴘ', url=CAPTION_BUTTON_URL),
+            InlineKeyboardButton('Mᴏᴠɪᴇs', url=f'https://telegram.me/{MOVIE_CHANNEL_USERNAME}')
         ],[
             InlineKeyboardButton('Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=f'https://telegram.me/{MOVIE_GROUP_USERNAME}')
         ],[
-            InlineKeyboardButton('🚪Gᴏ Bᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('🚪 Bᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('🔐 Cʟᴏꜱᴇ', callback_data='close_data')
         ]]
         
