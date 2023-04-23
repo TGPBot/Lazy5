@@ -88,6 +88,10 @@ SELF_DELETE = is_enabled((environ.get('SELF_DELETE','True')), False)
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
 DOWNLOAD_TEXT_URL = "https://t.me/LazyDeveloper"
 
+# Direct File Button #
+DIRECT_FILE_TEXT_NAME = "📥 DIRECT FILE 📥"
+DIRECT_FILE_TEXT_URL = "https://t.me/LazyDeveloper"
+
 # Custom Caption Under Button #
 CAPTION_BUTTON = "Get Updates"
 CAPTION_BUTTON_URL = "https://t.me/LazyDeveloper"
