@@ -768,7 +768,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv)
             reply_markup = InlineKeyboardMarkup(btn)
             await client.send_message(int(user_id), f"**Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ɪꜱ Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ..😌**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Pʟzz... Pʀᴏᴠɪᴅᴇ Sᴏᴍᴇ Mᴏʀᴇ Dᴇᴛᴀɪʟꜱ ᴛᴏ <a href='https://telegram.me/{ADMIN_USRNM}'>Aᴅᴍɪɴ</a>.**\n\n**Kɪɴᴅʟʏ Rᴇǫᴜᴇsᴛ Aɢᴀɪɴ  ᴏʀ Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ Fᴏʀ Hᴇʟᴘ.**", reply_markup=reply_markup)
-            await query.edit_message_text(text=f"- __**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ 😒\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`",reply_markup=reply_markup_lzdv)
+            await query.edit_message_text(text=f"__**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ 😒\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
             await query.delete()
@@ -793,7 +793,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv)            
             reply_markup = InlineKeyboardMarkup(btn)
             await client.send_message(int(user_id), f"**Hᴇʏ..!! Yᴏᴜʀ Rᴇǫᴜᴇsᴛᴇᴅ Cᴏɴᴛᴇɴᴛ ɪꜱ Aʟʀᴇᴀᴅʏ Uᴘʟᴏᴀᴅᴇᴅ✅**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Pʟz..Sᴇᴀʀᴄʜ Aɢᴀɪɴ ɪɴ Oᴜʀ Oꜰꜰɪᴄɪᴀʟ Gʀᴏᴜᴘ🙃**", reply_markup=reply_markup)
-            await query.edit_message_text(text=f"- __**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Aʟʀᴇᴀᴅʏ Uᴘʟᴏᴀᴅᴇᴅ ✅\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`",reply_markup=reply_markup_lzdv)
+            await query.edit_message_text(text=f"__**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Aʟʀᴇᴀᴅʏ Uᴘʟᴏᴀᴅᴇᴅ ✅\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
             await query.delete()
@@ -817,7 +817,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
             await client.send_message(int(user_id), f"**Yᴏᴜʀ Rᴇǫᴜᴇsᴛ Hᴀꜱ Bᴇᴇɴ Uᴘʟᴏᴀᴅᴇᴅ Sᴜᴄᴇssғᴜʟʟʏ✅**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Pʟz..Sᴇᴀʀᴄʜ Aɢᴀɪɴ ɪɴ Oᴜʀ Oꜰꜰɪᴄɪᴀʟ Gʀᴏᴜᴘ🙃**", reply_markup=reply_markup)
-            await query.edit_message_text(text=f"- __**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Uᴘʟᴏᴀᴅᴇᴅ ✅\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`", reply_markup=reply_markup_lzdv)
+            await query.edit_message_text(text=f"__**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Uᴘʟᴏᴀᴅᴇᴅ ✅\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`", reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
             await query.delete()
@@ -841,7 +841,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
             await client.send_message(int(user_id), f"**Sᴏʀʀʏ!!!😔 Yᴏᴜʀ Rᴇǫᴜᴇsᴛ Hᴀꜱ Bᴇᴇɴ Rᴇᴊᴇᴄᴛᴇᴅ Bʏ Aᴅᴍɪɴ❌**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Rᴇᴀꜱᴏɴ: Aʟʀᴇᴀᴅʏ Aᴅᴅᴇᴅ ɪɴ Rᴇǫᴜᴇsᴛ Lɪꜱᴛ ᴏʀ Rᴇǫᴜᴇsᴛ ɪꜱ Mᴀʟғᴏʀᴍᴀᴛᴛᴇᴅ.**\n\n**Kɪɴᴅʟʏ Rᴇǫᴜᴇsᴛ Aɢᴀɪɴ  ᴏʀ  Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ Fᴏʀ Hᴇʟᴘ.**", reply_markup=reply_markup)
-            await query.edit_message_text(text=f"- __**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Rᴇǫᴜᴇsᴛ Rᴇᴊᴇᴄᴛᴇᴅ ❌\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`",reply_markup=reply_markup_lzdv)
+            await query.edit_message_text(text=f"__**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Rᴇǫᴜᴇsᴛ Rᴇᴊᴇᴄᴛᴇᴅ ❌\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
             await query.delete()
@@ -865,7 +865,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
             await client.send_message(int(user_id), f"**Yᴏᴜʀ Rᴇǫᴜᴇsᴛᴇᴅ Cᴏɴᴛᴇɴᴛ Cᴏᴜʟᴅɴ'ᴛ ʙᴇ Fᴏᴜɴᴅ Bᴇᴄᴀᴜꜱᴇ ɪᴛ'ꜱ Nᴏᴛ Sᴘᴇʟʟᴇᴅ Cᴏʀʀᴇᴄᴛʟʏ💬**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Pʟz.. Cʜᴇᴄᴋ Sᴘᴇʟʟɪɴɢ ɪɴ  <a href='https://google.com/search'>🔎Gᴏᴏɢʟᴇ</a>. Aɴᴅ Sᴇᴀʀᴄʜ Aɢᴀɪɴ ɪɴ Oᴜʀ Oꜰꜰɪᴄɪᴀʟ Gʀᴏᴜᴘ🙃**", reply_markup=reply_markup)
-            await query.edit_message_text(text=f"- __**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Sᴘᴇʟʟɪɴɢ Eʀʀᴏʀ 🖊\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`",reply_markup=reply_markup_lzdv)
+            await query.edit_message_text(text=f"__**✅Uꜱᴇʀ Nᴏᴛɪꜰɪᴇᴅ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ...!!**__\n\n**🌐Sᴛᴀᴛᴜꜱ :** Sᴘᴇʟʟɪɴɢ Eʀʀᴏʀ 🖊\n**🪪Uꜱᴇʀ ID :** `{user_id}`\n**📨Cᴏɴᴛᴇɴᴛ :** `{movie}`",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
             await query.delete()
@@ -1218,7 +1218,7 @@ async def auto_filter(client, msg, spoll=False):
             user_id = message.from_user.id
             files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
             if not files:
-                await client.send_message(req_channel,f"**📟 Rᴇǫᴜᴇsᴛ Dᴇᴛᴀɪʟs :**\n\n**📨 Cᴏɴᴛᴇɴᴛ :** `{search}`\n**🧑🏻‍💻 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ : {message.from_user.mention}**\n**🪪 Uꜱᴇʀ ID :** {user_id}",
+                await client.send_message(req_channel,f"**📟 Rᴇǫᴜᴇsᴛ Dᴇᴛᴀɪʟs :**\n\n**📨 Cᴏɴᴛᴇɴᴛ :** `{search}`\n\n**🧑🏻‍💻 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ : {message.from_user.mention}**\n\n**🪪 Uꜱᴇʀ ID :** {user_id}",
                                                                                                        reply_markup=InlineKeyboardMarkup([
                                                                                                                                         [InlineKeyboardButton(text=f"✅Aʟʀᴇᴀᴅʏ Uᴘʟᴏᴀᴅᴇᴅ", callback_data=f"notify_user_alrupl:{user_id}:{requested_movie}")],
                                                                                                                                         [InlineKeyboardButton(text=f"✔️Uᴘʟᴏᴀᴅᴇᴅ", callback_data=f"notify_userupl:{user_id}:{requested_movie}"),InlineKeyboardButton("🖋Sᴘᴇʟʟ Eʀʀᴏʀ", callback_data=f"notify_user_spelling_error:{user_id}:{requested_movie}")],
@@ -1409,7 +1409,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"**Hᴇʀᴇ ɪꜱ Tʜᴇ Rᴇꜱᴜʟᴛ ꜰᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ:** {search} \n\n**Rᴇǫᴜᴇsᴛᴇᴅ Bʏ: {message.from_user.mention}** \n\n**Pᴏᴡᴇʀᴇᴅ Bʏ: {message.chat.title}** \n\n**Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ Bᴇ Aᴜᴛᴏ Dᴇʟᴇᴛᴇᴅ Aꜰᴛᴇʀ 5 Mɪɴᴜᴛᴇs.**"
+        cap = f"**Hᴇʀᴇ ɪꜱ Tʜᴇ Rᴇꜱᴜʟᴛ ꜰᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ:** {search} \n\n**Rᴇǫᴜᴇsᴛᴇᴅ Bʏ: {message.from_user.mention}** \n\n**Pᴏᴡᴇʀᴇᴅ Bʏ: {message.chat.title}** \n\n**Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ Bᴇ •Aᴜᴛᴏ Dᴇʟᴇᴛᴇᴅ Aꜰᴛᴇʀ 5 Mɪɴᴜᴛᴇs.**"
     if imdb and imdb.get('poster'):
         try:
             z = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
