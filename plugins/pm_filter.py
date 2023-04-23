@@ -735,7 +735,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv)
             reply_markup = InlineKeyboardMarkup(btn)
-            await client.send_message(int(user_id), f"😒 oops! sona, Your requested content named `{movie}` is not available right now, we are really trying our best to serve you this cotent,can you please provide us some more details related to your query {movie}, \nSend details to Admin : <a href='https://telegram.me/{ADMIN_USRNM}'>**Send here...**</a>\n\n❤ Thank You for the contribution", reply_markup=reply_markup)
+            await client.send_message(int(user_id), f"**Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ɪꜱ Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ..😌**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Pʟzz... Pʀᴏᴠɪᴅᴇ Sᴏᴍᴇ Mᴏʀᴇ Dᴇᴛᴀɪʟꜱ ᴛᴏ <a href='https://telegram.me/{ADMIN_USRNM}'>Aᴅᴍɪɴ</a>.**\n\n**Kɪɴᴅʟʏ Rᴇǫᴜᴇsᴛ Aɢᴀɪɴ  ᴏʀ Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ Fᴏʀ Hᴇʟᴘ.**", reply_markup=reply_markup)
             await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Not Available 😒.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
@@ -760,7 +760,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv)            
             reply_markup = InlineKeyboardMarkup(btn)
-            await client.send_message(int(user_id), f"🛋 Hey sona, Your requested content named `{movie}` is already available in our database! You can easily get this movie by searching it's correct name in our official group...\nSend details to Admin : \n\n❤ Thank You for the contribution", reply_markup=reply_markup)
+            await client.send_message(int(user_id), f"**Hᴇʏ..!! Yᴏᴜʀ Rᴇǫᴜᴇsᴛᴇᴅ Cᴏɴᴛᴇɴᴛ ɪꜱ Aʟʀᴇᴀᴅʏ Uᴘʟᴏᴀᴅᴇᴅ✅**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Pʟz..Sᴇᴀʀᴄʜ Aɢᴀɪɴ ɪɴ Oᴜʀ Oꜰꜰɪᴄɪᴀʟ Gʀᴏᴜᴘ🙃**", reply_markup=reply_markup)
             await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Already Uploaded ⚡.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
@@ -784,7 +784,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
-            await client.send_message(int(user_id), f"✅ Hey sona, Your requested content named `{movie}` is now available in our database! You can easily get this movie by searching it's correct name in our official group...\n\n❤ Thank You for the contribution", reply_markup=reply_markup)
+            await client.send_message(int(user_id), f"**Yᴏᴜʀ Rᴇǫᴜᴇsᴛ Hᴀꜱ Bᴇᴇɴ Uᴘʟᴏᴀᴅᴇᴅ Sᴜᴄᴇssғᴜʟʟʏ✅**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Pʟz..Sᴇᴀʀᴄʜ Aɢᴀɪɴ ɪɴ Oᴜʀ Oꜰꜰɪᴄɪᴀʟ Gʀᴏᴜᴘ🙃**", reply_markup=reply_markup)
             await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Upload done ✅.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋", reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
@@ -832,7 +832,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]]
             reply_markup_lzdv = InlineKeyboardMarkup(btn_lzdv) 
             reply_markup = InlineKeyboardMarkup(btn)
-            await client.send_message(int(user_id), f"🌍 Your spelling matters.\nThe requested content `{movie}` is available in our database, You were unable to get it because of your spelling mistake.🧐 Please make sure you've spelled correctly while searching content in group...\n\n❤Thank u for supporting us.", reply_markup=reply_markup)
+            await client.send_message(int(user_id), f"**Yᴏᴜʀ Rᴇǫᴜᴇsᴛᴇᴅ Cᴏɴᴛᴇɴᴛ Cᴏᴜʟᴅɴ'ᴛ ʙᴇ Fᴏᴜɴᴅ Bᴇᴄᴀᴜꜱᴇ ɪᴛ'ꜱ Nᴏᴛ Sᴘᴇʟʟᴇᴅ Cᴏʀʀᴇᴄᴛʟʏ💬**\n\n**Rᴇǫᴜᴇsᴛ Nᴀᴍᴇ:** `{movie}` \n\n**Pʟz.. Cʜᴇᴄᴋ Sᴘᴇʟʟɪɴɢ ɪɴ  <a href='https://google.com/search'>🔎Gᴏᴏɢʟᴇ</a>. Aɴᴅ Sᴇᴀʀᴄʜ Aɢᴀɪɴ ɪɴ Oᴜʀ Oꜰꜰɪᴄɪᴀʟ Gʀᴏᴜᴘ🙃**", reply_markup=reply_markup)
             await query.edit_message_text(text=f"- __**User notified successfully sweetie...✅**__\n\n⏳**Status** : Spelling error 🖊.\n🪪**UserID** : `{user_id}`\n🎞**Content** : `{movie}`\n\n\n🦋",reply_markup=reply_markup_lzdv)
         # Delete callback query message
             await query.answer()
@@ -1188,9 +1188,9 @@ async def auto_filter(client, msg, spoll=False):
             if not files:
                 await client.send_message(req_channel,f"**📟 Rᴇǫᴜᴇsᴛ Dᴇᴛᴀɪʟs :**\n\n**📨 Cᴏɴᴛᴇɴᴛ :** `{search}`\n**🧑🏻‍💻 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ : {message.from_user.mention}**\n**🪪 Uꜱᴇʀ ID :** {user_id}",
                                                                                                        reply_markup=InlineKeyboardMarkup([
-                                                                                                                                        [InlineKeyboardButton(text=f"✅Upload Done", callback_data=f"notify_userupl:{user_id}:{requested_movie}")],
-                                                                                                                                        [InlineKeyboardButton(text=f"⚡Already Upl..", callback_data=f"notify_user_alrupl:{user_id}:{requested_movie}"),InlineKeyboardButton("🖊Spell Error", callback_data=f"notify_user_spelling_error:{user_id}:{requested_movie}")],
-                                                                                                                                        [InlineKeyboardButton(text=f"😒Not Available", callback_data=f"notify_user_not_avail:{user_id}:{requested_movie}"),InlineKeyboardButton("❌Reject Req", callback_data=f"notify_user_req_rejected:{user_id}:{requested_movie}")],
+                                                                                                                                        [InlineKeyboardButton(text=f"✅Aʟʀᴇᴀᴅʏ Uᴘʟᴏᴀᴅᴇᴅ", callback_data=f"notify_user_alrupl:{user_id}:{requested_movie}")],
+                                                                                                                                        [InlineKeyboardButton(text=f"✔️Uᴘʟᴏᴀᴅᴇᴅ", callback_data=f"notify_userupl:{user_id}:{requested_movie}"),InlineKeyboardButton("🖋Sᴘᴇʟʟ Eʀʀᴏʀ", callback_data=f"notify_user_spelling_error:{user_id}:{requested_movie}")],
+                                                                                                                                        [InlineKeyboardButton(text=f"😒Nᴏᴛ Aᴠᴀɪʟ", callback_data=f"notify_user_not_avail:{user_id}:{requested_movie}"),InlineKeyboardButton("❌Rᴇᴊᴇᴄᴛ Rᴇǫ", callback_data=f"notify_user_req_rejected:{user_id}:{requested_movie}")],
                                                                                                                                         ]))
                 
                 l = await message.reply_text(text=f"**Sᴏʀʀʏ ɴᴏ Rᴇꜱᴜʟᴛ ꜰᴏᴜɴᴅ Fᴏʀ**\n`{search}`\n\n**ɪᴛ ʜᴀꜱ ʙᴇᴇɴ ꜱᴇɴᴛ ᴛᴏ...Aᴅᴍɪɴ**\n\n**Pʟᴇᴀᴇꜱᴇ ᴡᴀɪᴛ,..ɪ ᴡɪʟʟ ɴᴏᴛɪꜰʏ**\n**ʏᴏᴜ ᴀʙᴏᴜᴛ ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ...**\n\n**Rᴇǫᴜᴇsᴛᴇᴅ Bʏ: {message.from_user.mention}**",
