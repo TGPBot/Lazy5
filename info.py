@@ -85,11 +85,11 @@ SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
 SELF_DELETE = is_enabled((environ.get('SELF_DELETE','True')), False)
 
 # Download Tutorial Button #
-DOWNLOAD_TEXT_NAME = "📥Hᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ꜰʀᴏᴍ Lɪɴᴋ📥"
+DOWNLOAD_TEXT_NAME = "📥ᕼOᗯ TO ᗪOᗯᑎᒪOᗩᗪ ᖴᖇOᗰ ᒪIᑎK📥"
 DOWNLOAD_TEXT_URL = "https://t.me/LazYHuB"
 
 # Direct File Button #
-DIRECT_FILE_TEXT_NAME = "📁Gᴇᴛ ᴅɪʀᴇᴄᴛ ꜰɪʟᴇ ᴡɪᴛʜᴏᴜᴛ Lɪɴᴋ📁"
+DIRECT_FILE_TEXT_NAME = "📁GᏋT ᗪIᖇᏋᑕT ᖴIᒪᏋ ᗯITᕼOᑌT ᒪIᑎK📁"
 DIRECT_FILE_TEXT_URL = "https://t.me/LazYHuB"
 
 # Custom Caption Under Button #
