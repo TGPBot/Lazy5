@@ -72,11 +72,6 @@ async def start(client, message):
                 InlineKeyboardButton(
                     "🔔Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ🔔", url=invite_link.invite_link
                 )
-            ],
-             [
-                InlineKeyboardButton(
-                    "🔔Jᴏɪɴ Mᴏᴠɪᴇꜱ Cʜᴀɴɴᴇʟ🔔", url=f'https://telegram.me/{MOVIE_CHANNEL_USERNAME}'
-                )
             ]
         ]
 
